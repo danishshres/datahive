@@ -6,7 +6,7 @@
     <meta name="author" content="Danish shrestha">
     <meta name="description" content="Image annotator">
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/via.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'via.css' %}">
   </head>
 
   <body onload="_via_init()" onresize="_via_update_ui_components()">
@@ -14,7 +14,7 @@
         SVG icon set definitions
         Material icons downloaded from https://material.io/icons
       -->
-    <svg style="display:none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg style="display:none;" version="1.1" xmlns="">
       <defs>
         <symbol id="via_logo">
           <!-- Logo designed by Abhishek Dutta <adutta@robots.ox.ac.uk>, May 2018 -->
@@ -731,7 +731,11 @@ POSSIBILITY OF SUCH DAMAGE.
     <div style="width: 100%;" id="vertical_space"></div>
 
     <!-- DEMO SCRIPT AUTOMATICALLY INSERTED BY VIA PACKER SCRIPT -->
-    <script src="src/via.js"></script>
+    <!-- <script src="via.js"></script> -->
+    <script src="{% static 'via.js' %}"></script>
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'via_wikimedia_demo.js' %}"></script>
+    
     <!-- <script src="src/jquery.min.js"></script> -->
   </body>
 </html>

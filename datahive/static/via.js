@@ -367,9 +367,11 @@ function _via_init() {
   }
   // project_add_new_file("//Users⁩/danishshrestha⁩/Documents⁩/via-src-2.0.8⁩/data⁩/basic⁩/wikimedia_death_of_socrates.jpg",-1,0)
   // project_add_new_file("https://www.primevision.com/wp-content/uploads/2019/03/pv-logo-color.png")
-  project_add_new_file("https://www.deltares.nl/app/uploads/2015/01/Ochten_RWS-735x585.jpg")
-  _via_show_img(0);
+  // project_add_new_file("https://www.deltares.nl/app/uploads/2015/01/Ochten_RWS-735x585.jpg")
+  // _via_show_img(0);
   // update_img_fn_list();
+  // _via_load_submodules();
+  _via_load_job();
 }
 
 function _via_init_reg_canvas_context() {
@@ -783,6 +785,7 @@ function import_annotations_from_json(data_str) {
 
     var data = JSON.parse(data_str);
     var d;
+    _via_img_metadata = {}
 
     if ( data.hasOwnProperty('info') && data.hasOwnProperty('categories') &&
          data.hasOwnProperty('images') && data.hasOwnProperty('annotations')
@@ -3865,11 +3868,11 @@ function _via_handle_global_keydown_event(e) {
     }
   }
 
-  if ( e.key === 'ArrowRight' || e.key === 'n') {
-    move_to_next_image();
-    e.preventDefault();
-    return;
-  }
+  // if ( e.key === 'ArrowRight' || e.key === 'n') {
+  //   move_to_next_image();
+  //   e.preventDefault();
+  //   return;
+  // }
   if ( e.key === 'ArrowLeft' || e.key === 'p') {
     move_to_prev_image();
     e.preventDefault();

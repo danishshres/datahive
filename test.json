@@ -1,0 +1,68 @@
+[
+    {
+        "shape_attributes": {
+            "name": "rect",
+            "x": 115,
+            "y": 242,
+            "width": 115,
+            "height": 208
+        },
+        "region_attributes": {}
+    },
+    {
+        "shape_attributes": {
+            "name": "rect",
+            "x": 464,
+            "y": 171,
+            "width": 39,
+            "height": 91
+        },
+        "region_attributes": {}
+    },
+    {
+        "shape_attributes": {
+            "name": "skewedrect",
+            "all_points_x": [
+                584,
+                629,
+                633,
+                587
+            ],
+            "all_points_y": [
+                127,
+                125,
+                195,
+                198
+            ]
+        },
+        "region_attributes": {}
+    },
+    {
+        "shape_attributes": {
+            "name": "skewedrect",
+            "all_points_x": [
+                623,
+                367,
+                448,
+                704
+            ],
+            "all_points_y": [
+                22,
+                121,
+                329,
+                230
+            ]
+        },
+        "region_attributes": {}
+    },
+    {
+        "shape_attributes": {
+            "name": "rect",
+            "x": 577,
+            "y": 118,
+            "width": 79,
+            "height": 77
+        },
+        "region_attributes": {}
+    }
+]
