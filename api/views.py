@@ -93,6 +93,7 @@ from django.http import HttpResponse
 from django.template import loader
 import os
 
+@login_required(login_url='/api-auth/login/?next=/index')
 def index(request):
     # html_file = open('src/index.html')
 

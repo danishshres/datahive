@@ -11,8 +11,7 @@ urlpatterns = [
     path('projects/<int:pk>/', views.ProjectDetail.as_view()),
     # path('job/', views.CurrentJob.as_view()),
     path('job/', views.current_job),
-    # path('login', views.login),
-
-    path('login/', auth_views.login, name='login', 
-        kwargs={'redirect_authenticated_user': True})
+    # path('login/  ', auth_views.login)
+    # path('login/', auth_views.login, name='login', 
+        # kwargs={'redirect_authenticated_user': True})
 ]

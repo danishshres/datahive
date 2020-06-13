@@ -7,6 +7,7 @@
     <meta name="description" content="Image annotator">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'via.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rest_framework/css/bootstrap.min.css' %}">
   </head>
 
   <body onload="_via_init()" onresize="_via_update_ui_components()">
@@ -153,8 +154,34 @@
       <!-- here, a child div with id="annotation_editor" is added by javascript -->
     </div>
 
-    <div class="top_panel" id="ui_top_panel">
-      <!-- menu bar -->
+    <!-- <div class="top_panel" style="height:60px"> -->
+    <div class="wrapper">
+      <div class="navbar navbar-static-top navbar-inverse">
+        <div class="container">
+          <span>
+            <a class="navbar-brand" rel="nofollow" href="/">
+            Data-Hive
+            </a>
+          </span>
+
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  User
+                  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="/api-auth/logout">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="top_panel" id="ui_top_panel" style="display:none">
+      
       <div class="menubar">
         <ul>
           <li onclick="show_home_panel()" style="cursor:pointer;">Home</li>
@@ -219,7 +246,6 @@
           </li>
         </ul>
       </div> <!-- end of menubar -->
-
       <!-- Shortcut toolbar -->
       <div class="toolbar">
         <svg onclick="project_open_select_project_file()" viewbox="0 0 24 24"><use xlink:href="#icon_open"></use><title>Open Project</title></svg>
@@ -735,7 +761,7 @@ POSSIBILITY OF SUCH DAMAGE.
     <script src="{% static 'via.js' %}"></script>
     <script src="{% static 'jquery.min.js' %}"></script>
     <script src="{% static 'via_wikimedia_demo.js' %}"></script>
-    
+    <script src="{% static 'rest_framework/js/bootstrap.min.js' %}"></script>
     <!-- <script src="src/jquery.min.js"></script> -->
   </body>
 </html>

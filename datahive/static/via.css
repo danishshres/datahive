@@ -12,7 +12,7 @@ a { text-decoration:none; }
 textarea { border:1px solid #cccccc; margin:0.6rem 0; padding:0.2rem 0.4rem; }
 
 /* Top panel : #navbar, #toolbar */
-.top_panel { font-size:0.9rem; display:block; background-color:#212121; color:#ffffff; z-index:1001; margin-bottom:1rem;}
+.top_panel { font-size:0.9rem; display:block; background-color:#6f8085; color:#ffffff; z-index:1001; margin-bottom:1rem;}
 
 /* Navigation menu bar that appear at the top */
 .menubar { display:inline-block; height:1.8rem; } /* height needed to avoid extra bottom border */
